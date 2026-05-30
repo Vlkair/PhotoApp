@@ -1,7 +1,6 @@
 package com.example.photoapp.data.api
 
 import com.example.photoapp.data.model.PexelsResponse
-import com.example.photoapp.data.api.Constants
 import retrofit2.Response
 import retrofit2.http.GET
 import retrofit2.http.Query

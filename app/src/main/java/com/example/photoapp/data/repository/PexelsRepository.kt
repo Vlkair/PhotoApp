@@ -18,3 +18,15 @@ class PexelsRepository(private val api: PexelsApi) {
     }
   }
 }
+// suspend fun refreshCurated(page: Int = 1, perPage: Int = 40)){
+// try{
+//  val resp= api.getCurated(page = page, perPage = perPage)
+//  if(resp.isSuccessful){
+//    val body = resp.body()
+//    if(body != null){
+//      dao.deleteAll()
+//      dao.insertAll(photos=body.photos.map{it.toEntity()})
+//    }
+//  }
+// }catch(_:exception e){}
+// }

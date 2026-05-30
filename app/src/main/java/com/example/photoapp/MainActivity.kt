@@ -26,7 +26,7 @@ class MainActivity : ComponentActivity() {
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-
+//val database= PhotoDatabase.getInstance(context=this)
     val api = NetworkModule.providePexelsApi(apiKey)
     val dao = DatabaseModule.providePhotoDao(applicationContext)
     val repo = PhotoRepository(api, dao)
